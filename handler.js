@@ -1,5 +1,6 @@
 'use strict';
 const fs = require('fs');
+const Mustache = require('mustache');
 const template = fs.readFileSync('static/index.html', 'utf-8');
 
 module.exports.index = async event => {
