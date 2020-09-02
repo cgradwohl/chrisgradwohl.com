@@ -1,4 +1,4 @@
-service: chrisgradwohl.com
+service: chrisgradwohl-homepage
 
 provider:
   name: aws
