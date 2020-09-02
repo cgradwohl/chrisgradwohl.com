@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mustache": "^4.0.1"
+    "mustache": "^4.0.1",
+    "serverless-s3-sync": "^1.14.4"
   }
 }
