@@ -1,0 +1,46 @@
+package component
+
+templ MainLayout() {
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<meta name="color-scheme" content="light dark"/>
+			<link rel="icon" type="image/png" href="/img/favicon.ico"/>
+			<link rel="stylesheet" href="/css/pico.jade.min.css"/>
+			<title>Chris Gradwohl</title>
+		</head>
+		<body>
+			<header>
+				<nav class="container">
+					<ul>
+						// <li><strong>Chris Gradwohl</strong></li>
+					</ul>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/interests">Interests</a></li>
+						<li><a href="/blog">Blog</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main class="container">
+				{ children... }
+			</main>
+			<footer class="container"></footer>
+		</body>
+	</html>
+	<style>
+		header {
+			padding-block: 0 !important;
+			box-shadow: 0 .125rem .25rem rgba(255,255,255,.11);
+		}
+		main {
+			margin: 2% 0;
+		}
+
+		.container {
+			max-width: 1200px;
+		}
+	</style>
+}

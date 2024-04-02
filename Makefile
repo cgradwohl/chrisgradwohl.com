@@ -1,6 +1,6 @@
 build:
 	@templ generate
-	@go build -o bin/server -v
+	@go build -o bin/server -v ./app/server.go
 
 run: build
 	@./bin/server

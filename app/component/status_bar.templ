@@ -1,0 +1,78 @@
+package component
+
+templ StatusBar() {
+	<html lang="en">
+		<head>
+			<meta charset="utf-8"/>
+			<meta name="viewport" content="width=device-width"/>
+		</head>
+		<body style="height: 300vh">
+			<svg
+				style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+				width="655"
+				height="209"
+				viewBox="0 0 655 209"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M653 207V62C653 28.8629 626.228 2 593.091 2C519.318 2 391.639 2 292.675 2C270.583 2 252.717 19.9124 252.717 42.0038C252.717 63.5378 252.717 81.7221 252.717 81.7221C252.717 81.7221 252.717 81.7221 252.717 81.7221V167C252.717 189.091 234.808 207 212.717 207H2"
+					stroke="#EAECF0"
+					stroke-width="4"
+					stroke-linecap="round"
+				></path>
+				<path
+					style="stroke-dasharray: 100%; stroke-dashoffset: var(--offset, -100); transition: stroke-dashoffset 300ms ease-in-out;"
+					pathLength="100"
+					d="M653 207V62C653 28.8629 626.228 2 593.091 2C519.318 2 391.639 2 292.675 2C270.583 2 252.717 19.9124 252.717 42.0038C252.717 63.5378 252.717 81.7221 252.717 81.7221C252.717 81.7221 252.717 81.7221 252.717 81.7221V167C252.717 189.091 234.808 207 212.717 207H2"
+					stroke="url(#paint0_linear_2413_2981)"
+					stroke-width="4"
+					stroke-linecap="round"
+				></path>
+				<path
+					style="stroke-dasharray: 100%; stroke-dashoffset: var(--offset, -100); transition: stroke-dashoffset 300ms ease-in-out;"
+					pathLength="100"
+					d="M653 207V62C653 28.8629 626.228 2 593.091 2C519.318 2 391.639 2 292.675 2C270.583 2 252.717 19.9124 252.717 42.0038C252.717 63.5378 252.717 81.7221 252.717 81.7221C252.717 81.7221 252.717 81.7221 252.717 81.7221V167C252.717 189.091 234.808 207 212.717 207H2"
+					stroke="url(#paint1_linear_2413_2981)"
+					stroke-width="4"
+					stroke-linecap="round"
+				></path>
+				<defs>
+					<linearGradient
+						id="paint0_linear_2413_2981"
+						x1="258.5"
+						y1="2"
+						x2="102.762"
+						y2="266.36"
+						gradientUnits="userSpaceOnUse"
+					>
+						<stop stop-color="#3C5AEB"></stop>
+						<stop offset="0.457931" stop-color="#2E90FA"></stop>
+						<stop offset="0.875" stop-color="#B7FFFF"></stop>
+						<stop offset="1" stop-color="#B7FFFF"></stop>
+					</linearGradient>
+					<linearGradient
+						id="paint1_linear_2413_2981"
+						x1="457"
+						y1="-17"
+						x2="702.686"
+						y2="113.356"
+						gradientUnits="userSpaceOnUse"
+					>
+						<stop stop-color="#3C5AEB" stop-opacity="0"></stop>
+						<stop offset="0.03" stop-color="#3A60ED"></stop>
+						<stop offset="0.457931" stop-color="#2E90FA"></stop>
+						<stop offset="0.875" stop-color="#B7FFFF"></stop>
+						<stop offset="1" stop-color="#B7FFFF"></stop>
+					</linearGradient>
+				</defs>
+			</svg>
+			<script>
+        document.addEventListener('scroll', () => {
+          const percentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)).toFixed(2);
+          document.documentElement.style.setProperty("--offset", `${-100 + (percentage * 100)}`);
+        })
+      </script>
+		</body>
+	</html>
+}
