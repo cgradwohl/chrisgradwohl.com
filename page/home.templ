@@ -6,12 +6,22 @@ import (
 
 templ Home() {
 	@component.MainLayout() {
-		<article id="article">
-			// <h2>Chris Gradwohl</h2>
-			<p>
-				Hello and welcome to my part of the internet. I write about building software and related topics. Enjoy!
-			</p>
-		</article>
+		<div class="grid">
+			<img src="/img/me.jpg" alt=""/>
+			<article id="article">
+				<p>
+					Hello and welcome. My name is Chris Gradwohl. I am a software engineer, husband, father and outdoor adventurer.
+				</p>
+			</article>
+		</div>
+		<style type="text/css">
+			img {
+				border-radius: 50%;
+				width: 270px;
+				height: 270px;
+				margin: 0 auto;
+				object-fit: cover;
+			}
+		</style>
 	}
-	@component.StatusBar()
 }

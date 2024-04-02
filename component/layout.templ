@@ -7,11 +7,21 @@ templ MainLayout() {
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<meta name="color-scheme" content="light dark"/>
-			<link rel="stylesheet" href="/css/pico.cyan.min.css"/>
-			<title>Wohlburger</title>
+			<link rel="stylesheet" href="/css/pico.jade.min.css"/>
+			<title>Chris Gradwohl</title>
 		</head>
 		<body>
 			<main class="container">
+				<nav>
+					<ul>
+						<li><strong>Chris Gradwohl</strong></li>
+					</ul>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/interests">Interests</a></li>
+						<li><a href="/blog">Blog</a></li>
+					</ul>
+				</nav>
 				{ children... }
 			</main>
 		</body>

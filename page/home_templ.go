@@ -33,7 +33,7 @@ func Home() templ.Component {
 				templ_7745c5c3_Buffer = templ.GetBuffer()
 				defer templ.ReleaseBuffer(templ_7745c5c3_Buffer)
 			}
-			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<article id=\"article\"><p>Hello and welcome to my part of the internet. I write about building software and related topics. Enjoy!</p></article>")
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"grid\"><img src=\"/img/me.jpg\" alt=\"\"><article id=\"article\"><p>Hello and welcome. My name is Chris Gradwohl. I am a software engineer, husband, father and outdoor adventurer.</p></article></div><style type=\"text/css\">\n\t\t\timg {\n\t\t\t\tborder-radius: 50%;\n\t\t\t\twidth: 270px;\n\t\t\t\theight: 270px;\n\t\t\t\tmargin: 0 auto;\n\t\t\t\tobject-fit: cover;\n\t\t\t}\n\t\t</style>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -43,10 +43,6 @@ func Home() templ.Component {
 			return templ_7745c5c3_Err
 		})
 		templ_7745c5c3_Err = component.MainLayout().Render(templ.WithChildren(ctx, templ_7745c5c3_Var2), templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = component.StatusBar().Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
