@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
+	"chrisgradwohl.com/page"
 	"github.com/a-h/templ"
 	"github.com/labstack/echo/v4"
-	"wohlburger.io/page"
 )
 
 func Render(ctx echo.Context, statusCode int, t templ.Component) error {

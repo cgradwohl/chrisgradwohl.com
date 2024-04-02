@@ -1,4 +1,4 @@
-module wohlburger.io
+module chrisgradwohl.com
 
 go 1.22.0
 

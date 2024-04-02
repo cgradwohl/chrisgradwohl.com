@@ -1,12 +1,17 @@
 package page
 
+import (
+	"chrisgradwohl.com/component"
+)
+
 templ Home() {
-	@MainLayout() {
+	@component.MainLayout() {
 		<article id="article">
-        // <h2>Chris Gradwohl</h2>
-        <p>
-          Hello and welcome to my part of the internet. I write about building software and related topics. Enjoy!
-        </p>
-      </article>
+			// <h2>Chris Gradwohl</h2>
+			<p>
+				Hello and welcome to my part of the internet. I write about building software and related topics. Enjoy!
+			</p>
+		</article>
 	}
+	@component.StatusBar()
 }
