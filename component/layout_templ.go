@@ -23,7 +23,7 @@ func MainLayout() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<!doctype html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"color-scheme\" content=\"light dark\"><link rel=\"stylesheet\" href=\"/css/pico.jade.min.css\"><title>Chris Gradwohl</title></head><body><main class=\"container\"><nav><ul><li><strong>Chris Gradwohl</strong></li></ul><ul><li><a href=\"/\">Home</a></li><li><a href=\"/interests\">Interests</a></li><li><a href=\"/blog\">Blog</a></li></ul></nav>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<!doctype html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"color-scheme\" content=\"light dark\"><link rel=\"icon\" type=\"image/png\" href=\"/img/favicon.ico\"><link rel=\"stylesheet\" href=\"/css/pico.jade.min.css\"><title>Chris Gradwohl</title></head><body><header><nav class=\"container\"><ul></ul><ul><li><a href=\"/\">Home</a></li><li><a href=\"/interests\">Interests</a></li><li><a href=\"/blog\">Blog</a></li></ul></nav></header><main class=\"container\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -31,7 +31,7 @@ func MainLayout() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</main></body></html>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</main><footer class=\"container\"></footer></body></html><style>\n\t\theader {\n\t\t\tpadding-block: 0 !important;\n\t\t\tbox-shadow: 0 .125rem .25rem rgba(255,255,255,.11);\n\t\t}\n\t\tmain {\n\t\t\tmargin: 2% 0;\n\t\t}\n\n\t\t.container {\n\t\t\tmax-width: 1200px;\n\t\t}\n\t</style>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
